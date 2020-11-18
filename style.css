@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Industry Inc';
+    src: url('industry-inc.ttf');
+}
+
+body {
+    background: #668f80;
+}
+
+.center {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    width: 900px;
+    margin: 20px;
+}
+
+#countdown,
+#countdown-sub {
+    margin: 0;
+    color: #fff;
+    font-family: 'Industry Inc';
+    font-size: 130px;
+    text-align: center;
+}
+
+#countdown-sub {
+    margin-top: -35px;
+    font-size: 50px;
+}
+
+.button {
+    text-align: center;
+    color: #668f80;
+    font-family: 'Industry Inc';
+    display: inline-block;
+    font-size: 30px;
+    background: #fff;
+    padding: 15px;
+    margin: 10px;
+    text-decoration: none;
+    transition: opacity .2s;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
+.button-long {
+    width: calc(100% - 50px);
+}
+
+.button-half {
+    width: calc(50% - 52px);
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        width: 80vw;
+    }
+    #countdown{
+        font-size: 11vw;
+    }
+    #countdown-sub{
+        margin: 0;
+        font-size: 5vw;
+    }
+    .button-half{
+        width: calc(100% - 50px);
+    }
+    .button{
+        font-size: 23px;
+    }
+}
+@media only screen and (max-height: 800px) {
+    .center{
+        position: static;
+        transform: none;
+    }
+}
