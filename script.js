@@ -17,7 +17,7 @@ function timerGo() {
     document.querySelector('#countdown').innerHTML = days + ' : ' + hours + ' : ' +
         minutes + ' : ' + seconds;
 
-    if (distance < 0 || true) {
+    if (distance < 0 || false) {
         clearInterval(timer);
         document.querySelector('#countdown').style.display = 'none';
         document.querySelector('#countdown-sub').style.display = 'none';
